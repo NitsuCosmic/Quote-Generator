@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Javascript Random Quote Generator</title>
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<section class="card">
+					<h1 class="card__author" id="author"></h1>
+					<div class="card__quote-info" id="quote-tags"></div>
+					<h2 class="card__quote" id="quote"></h2>
+				</section>
+				<div class="buttons">
+					<button class="buttons__random-btn" id="random-btn">
+						<picture>
+							<img src="./assets/images/Regroup.svg" alt="Regroup icon" />
+						</picture>
+					</button>
+					<button class="buttons__copy-btn" id="copy-btn">
+						<picture>
+							<img src="./assets/images/link.svg" alt="Link icon" />
+						</picture>
+					</button>
+				</div>
+			</div>
+			<div class="copied-text" id="copied-text">
+				<p>Text copied to clipboard!</p>
+			</div>
+		</main>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

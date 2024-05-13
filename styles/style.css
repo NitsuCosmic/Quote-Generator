@@ -1,0 +1,120 @@
+body {
+	background-color: #111729;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100svh;
+	font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+.wrapper {
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.card {
+	max-width: 800px;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: #20293a;
+	background-image: url("../assets/images/bg-image-random-quote.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card__author {
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.card__quote-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.quote-info__tag,
+.quote-info__category {
+	padding: 0.1rem 1rem;
+	border-radius: 1rem;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #6466e9;
+	border: 2px solid #6466e9;
+}
+
+.card__quote {
+	font-weight: 400;
+	font-size: 1.75rem;
+	color: #97a3b6;
+	margin-top: 2rem;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.buttons__random-btn,
+.buttons__copy-btn {
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	border: none;
+	border: 1px solid #4a5567;
+	background-color: transparent;
+	transition: background-color 0.25s ease, border 0.25s ease;
+}
+
+.buttons__random-btn:hover,
+.buttons__copy-btn:hover {
+	background-color: #6466e9;
+	border: 1px solid #6466e9;
+}
+
+.buttons__random-btn {
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.buttons__copy-btn {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.buttons img {
+	min-width: 2rem;
+}
+
+.copied-text {
+	opacity: 0;
+	position: fixed;
+	bottom: -6rem;
+	padding: 1rem 1.5rem;
+	border-radius: 1rem;
+	color: #ffffff;
+	background-color: #20293a;
+	transition: all 0.5s ease;
+	border-bottom: 4px solid #6466e9;
+	z-index: 999;
+}
+
+.copied-text.active {
+	opacity: 1;
+	bottom: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+	.card {
+		padding: 2rem 4rem;
+	}
+}
